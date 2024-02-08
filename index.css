@@ -26,7 +26,28 @@ display: flex;
   align-items: center;
 
 }
+.quizItem h3 {
+  padding: 16px 0px;
+  color: #a535e6;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+}
 
+.quizItem h3:before {
+  counter-increment: quiz-item;
+  content: counter(quiz-item);
+  background-color: #a535e6;
+  color: #f6e6ff;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-weight: 700;
+  font-size: 12px;
 #Treffer {
   text-align: center;
   font-size: small;
